@@ -1,0 +1,105 @@
+{
+  "menuItems": [
+    {
+      "name": "Case Studies"
+    },
+    {
+      "name": "Services"
+    },
+    {
+      "name": "Expertise"
+    },
+    {
+      "name": "About"
+    }
+  ],
+  "texts": [
+    {
+      "type": "header",
+      "text": "We launch different types of platforms and operating systems us"
+    },
+    {
+      "type": "upperCoten",
+      "title": "What We Do",
+      "text": "We launch different types of platforms and operating systems us"
+    },
+    {
+      "type": "bottom",
+      "text": "We enjoy what we do.  Working wi th smart people at great projec"
+    }
+  ],
+  "services": [
+    {
+      "name": "Mobile Apps",
+      "description": "We are a nimble team of designers, developers, and Mobile Apps"
+    },
+    {
+      "name": "Web Services",
+      "description": "We are a nimble team of designers, developers, and Web Services"
+    },
+    {
+      "name": "Augmented Reality",
+      "description": "We are a nimble team of designers, developers, and Augmented Reality"
+    },
+    {
+      "name": "UX/UI Design",
+      "description": "We are a nimble team of designers, developers, and UX/UI Design"
+    },
+    {
+      "name": "Development",
+      "description": "We are a nimble team of designers, developers, and Development"
+    }
+  ],
+  "footer": {
+    "contacts": {
+      "Headquarters": "11 E. Chavdar Street, Office 222, Kiev, Ukraine 0",
+      "countries": [
+        {
+          "country": "USA",
+          "mail": "usa.hr@trinetix.com",
+          "phone": "+1 212-336-1440"
+        },
+        {
+          "country": "Ukraine",
+          "mail": "ua.hr@trinetix.com ",
+          "phone": "+38 044-334-2341"
+        }
+      ]
+    },
+    "social": [
+      {
+        "name": "Facebook"
+      },
+      {
+        "name": "LinkedIn"
+      },
+      {
+        "name": "Google+"
+      },
+      {
+        "name": "Twitter"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Home"
+      },
+      {
+        "name": "Case Studies"
+      },
+      {
+        "name": "Services"
+      },
+      {
+        "name": "Expertise"
+      },
+      {
+        "name": "About"
+      },
+      {
+        "name": "Contact Us"
+      }
+    ],
+    "copiright": "© 2010-2015 Trinetix LLC"
+  }
+}
