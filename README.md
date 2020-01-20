@@ -1,6 +1,12 @@
 # MdbAngularFree
 
+## Start project
+to start run project write:
+npm i
+npm run dev
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
+
 
 ## Development server
 
