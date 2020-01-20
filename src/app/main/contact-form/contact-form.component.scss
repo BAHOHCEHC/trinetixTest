@@ -12,3 +12,8 @@ button.close {
   left: -4px;
   position: relative;
 }
+@media (max-width: 780px) {
+  .form_wrapper {
+    padding: 20% 5%;
+  }
+}

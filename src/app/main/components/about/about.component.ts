@@ -18,18 +18,9 @@ export class AboutComponent implements OnInit {
     private formState: DataService
   ) {}
   textData$: Observable<TextItem[]>;
-  // about: { type: string; text: string; title?: string };
-
   ngOnInit() {
     this.textData$ = this.dataServiceService.getPageText("about");
-    // this.textData$.subscribe(res => {
-    //   this.about = res.reduce(
-    //     (sum, current) => {
-    //       return current.type === "about" ? Object.assign(sum, current) : sum;
-    //     },
-    //     { type: "", text: "" }
-    //   );
-    // });
+
   }
   showForm() {
     this.formState.changeState(false);

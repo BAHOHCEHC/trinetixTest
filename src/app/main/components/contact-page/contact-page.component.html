@@ -1,22 +1,3 @@
-<!-- <main class="content">
-  <section class="bottom_words" *ngIf="contactpage">
-    <section class="content_botom">
-      <div class="container">
-        <div class="row text-center justify-content-center flex-column align-items-center  flex-column align-items-center">
-          <h3 class="content_title content_title-bottom ">
-            {{ contactpage.title }}
-          </h3>
-          <p>{{contactpage.text}}</p>
-          <button href="#" (click)="showForm()" color="info" class="btn_bottom" mdbWavesEffect>
-            Contact Us
-          </button>
-        </div>
-      </div>
-    </section>
-  </section>
-</main> -->
-
-
 <main class="content">
   <section class="bottom_words" *ngIf="textData$ | async as textDatas; else loader">
     <section class="content_botom">
@@ -36,6 +17,7 @@
 </main>
 
 <ng-template #loader>
-  <!-- <app-loader></app-loader> -->
-  <p>ssssssssssssssssssss</p>
+  <div class="d-flex align-items-center">
+    <i class="fas fa-spinner"></i>
+  </div>
 </ng-template>

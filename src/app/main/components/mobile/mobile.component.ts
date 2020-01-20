@@ -18,17 +18,6 @@ export class MobileComponent implements OnInit {
 
   ngOnInit() {
     this.textData$ = this.dataServiceService.getPageText("mobile");
-    // this.textData$ = this.dataServiceService.getTexts();
-    // this.textData$.subscribe(res => {
-    //   this.mobile = res.reduce(
-    //     (sum, current) => {
-    //       return current.type === "mobile"
-    //         ? Object.assign(sum, current)
-    //         : sum;
-    //     },
-    //     { type: "", text: "" }
-    //   );
-    // });
   }
   showForm() {
     this.formState.changeState(false);

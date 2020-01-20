@@ -14,21 +14,10 @@ export class ContactPageComponent implements OnInit {
     private formState: DataService
   ) {}
   textData$: Observable<TextItem[]>;
-  // contactpage: { type: string; text: string; title?: string };
 
   ngOnInit() {
     this.textData$ = this.dataServiceService.getPageText("contactpage");
-    // this.textData$ = this.dataServiceService.getTexts();
-    // this.textData$.subscribe(res => {
-    //   this.contactpage = res.reduce(
-    //     (sum, current) => {
-    //       return current.type === "contactpage"
-    //         ? Object.assign(sum, current)
-    //         : sum;
-    //     },
-    //     { type: "", text: "" }
-    //   );
-    // });
+
   }
   showForm() {
     this.formState.changeState(false);

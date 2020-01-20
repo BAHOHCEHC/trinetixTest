@@ -25,7 +25,7 @@
     {
       "type": "upperContent",
       "title": "What We Do",
-      "text": "We launch different types of platforms and operating systems us"
+      "text": "We launch different types of platforms and operating systems using distinguishes of every platform or operating system as adventage and a powerful tool."
     },
     {
       "type": "contactpage",
@@ -79,37 +79,37 @@
     },
     {
       "type": "bottomContent",
-      "text": "We enjoy what we do.Working with smart people at great projecs"
+      "text": "We enjoy what we do.\nWorking with smart people at great projects.\nContact us if you want to work with us."
     }
   ],
   "services": [
     {
       "name": "Mobile Apps",
-      "description": "We are a nimble team of designers, developers, and Mobile Apps",
+      "description": "We are a nimble team of designers, developers, and strategists who are passionate about helping our clients achieve their goals and grow their brands.",
       "link": "/mobile",
       "img": "../assets/img/mobile.png"
     },
     {
       "name": "Web Services",
-      "description": "We are a nimble team of designers, developers, and Web Services",
+      "description": "We are a nimble team of designers, developers, and strategists who are passionate about helping our clients achieve their goals and grow their brands.",
       "link": "/webservices",
       "img": "../assets/img/webservices.png"
     },
     {
       "name": "Augmented Reality",
-      "description": "We are a nimble team of designers, developers, and Augmented Reality",
+      "description": "We are a nimble team of designers, developers, and strategists who are passionate about helping our clients achieve their goals and grow their brands.",
       "link": "/augmented_reality",
       "img": "../assets/img/augmented_reality.png"
     },
     {
       "name": "UX/UI Design",
-      "description": "We are a nimble team of designers, developers, and UX/UI Design",
+      "description": "We are a nimble team of designers, developers, and strategists who are passionate about helping our clients achieve their goals and grow their brands.",
       "link": "/ux_ui_design",
       "img": "../assets/img/design.png"
     },
     {
       "name": "Development",
-      "description": "We are a nimble team of designers, developers, and Development",
+      "description": "We are a nimble team of designers, developers, and strategists who are passionate about helping our clients achieve their goals and grow their brands.",
       "link": "/development",
       "img": "../assets/img/development.png"
     }

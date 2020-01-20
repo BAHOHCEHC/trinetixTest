@@ -14,21 +14,9 @@ export class DevelopmentComponent implements OnInit {
     private formState: DataService
   ) {}
   textData$: Observable<TextItem[]>;
-  // contactpage: { type: string; text: string; title?: string };
 
   ngOnInit() {
     this.textData$ = this.dataServiceService.getPageText("development");
-    // this.textData$ = this.dataServiceService.getTexts();
-    // this.textData$.subscribe(res => {
-    //   this.development = res.reduce(
-    //     (sum, current) => {
-    //       return current.type === "development"
-    //         ? Object.assign(sum, current)
-    //         : sum;
-    //     },
-    //     { type: "", text: "" }
-    //   );
-    // });
   }
   showForm() {
     this.formState.changeState(false);
