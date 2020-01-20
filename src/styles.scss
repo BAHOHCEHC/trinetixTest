@@ -1,1 +1,353 @@
 /* You can add global styles to this file, and also import other style files */
+@mixin fontFace($family, $src, $style: normal, $weight: normal) {
+  @font-face {
+    font-family: $family;
+    src: url("#{$src}.eot"); // IE9 compat
+    src: url("#{$src}.eot?#iefix") format("embedded-opentype"),
+      // IE8 and below
+        url("#{$src}.woff") format("woff"),
+      // standards
+        url("#{$src}.ttf") format("truetype"),
+      // Safari, Android, iOS
+        url("#{$src}.svg##{$family}") format("svg"); // legacy iOS
+
+    font-style: $style;
+    font-weight: $weight;
+  }
+}
+@include fontFace("DecimaNovaPro", "assets/fonts/DecimaNovaPro");
+@include fontFace("DecimaNovaProBold", "assets/fonts/DecimaNovaPro-Bold");
+@include fontFace("DecimaNovaProLight", "assets/fonts/DecimaNovaProLight");
+@include fontFace("DecimaNovaProLt", "assets/fonts/DecimaNovaProLt");
+
+$color-white: #fff;
+$color-primary: #00172b;
+$color-border-smoth: #00203c;
+$color-title: #105788;
+$color-active_menu: #00abff;
+$color-grey: #e1e1e1;
+
+body {
+  font-family: "DecimaNovaPro";
+}
+.container {
+  width: 1200px;
+  max-width: 100%;
+}
+.w-full {
+  width: 100%;
+}
+mdb-navbar .navbar.navbar-1 .navbar-toggler-icon {
+  background-image: url(https://mdbootstrap.com/img/svg/hamburger7.svg?color=FFFFFF);
+}
+.fz-menu {
+  font-size: 14px;
+}
+.c-w {
+  color: $color-white;
+}
+.show {
+  &_desctop {
+    border-bottom: 1px solid $color-border-smoth;
+  }
+  &_mobile {
+    border-bottom: 1px solid $color-border-smoth;
+  }
+}
+
+.header {
+  border-top: 4px solid $color-active_menu;
+  background-color: $color-primary;
+  .nav_wrapper {
+    padding: 4px 0 0px;
+  }
+  &_button {
+    margin-top: 3px;
+    padding: 5px 15px;
+    border-radius: 25px;
+    border: 1px solid $color-white;
+    background-color: transparent;
+    color: $color-white;
+    width: 110px;
+    margin-left: 2%;
+  }
+  &_nav {
+    padding-top: 3px;
+    padding-top: 3px;
+    // width: 77%;
+    flex-grow: 2;
+    margin-right: 0px;
+    &-link {
+      color: $color-white;
+      padding: 9px 24px;
+      &.active {
+        color: $color-active_menu;
+      }
+    }
+  }
+}
+.descriptor {
+  &_secton {
+    padding: 20px 0 25px;
+  }
+  &_title {
+    padding: 27px 0px;
+    line-height: 58px;
+    font-size: 48px;
+    font-family: "PT Serif", serif;
+    letter-spacing: 0.1px;
+  }
+}
+.scrolable_menu {
+  .nav_under {
+    .nav-item {
+      padding: 12px 0 6px;
+      a {
+        color: $color-white;
+        padding: 8px 22px 8px 22px;
+      }
+      &.active {
+        border-bottom: 4px solid $color-active_menu;
+        box-sizing: border-box;
+        a {
+          color: $color-active_menu;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+.desctop_menu {
+  padding: 7px 0 12px;
+}
+.content_top {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 40px;
+  position: relative;
+  padding: 49px 0 41px;
+  .line_space {
+    position: absolute;
+    bottom: -1px;
+    width: 41px;
+    height: 1px;
+    background-color: #fff;
+    right: calc(50% - 22px);
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 29px;
+    background-color: #e1e1e1;
+    bottom: -24px;
+    right: calc(50% - -9px);
+    -webkit-transform: rotate(-51deg);
+    transform: rotate(-51deg);
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 28px;
+    background-color: #e1e1e1;
+    bottom: -24px;
+    right: calc(50% - 12px);
+    -webkit-transform: rotate(55deg);
+    transform: rotate(51deg);
+  }
+}
+.content {
+  min-height: 360px;
+  &_title {
+    font-size: 54px;
+    font-family: "PT Serif", serif;
+    &-bottom {
+      padding: 5px 80px;
+      font-size: 48px;
+      letter-spacing: -0.2px;
+    }
+  }
+  &_title {
+    color: $color-title;
+    margin-bottom: 20px;
+  }
+  .description {
+    font-family: "DecimaNovaProLt";
+    font-size: 28px;
+    line-height: 38px;
+    padding: 0 12%;
+  }
+}
+.services {
+  padding: 70px 0;
+  border-bottom: 1px solid $color-grey;
+  &_items {
+    margin-bottom: 47px;
+  }
+  &_title {
+    color: $color-active_menu;
+    font-size: 38px;
+    font-family: "PT Serif", serif;
+  }
+  &_body {
+    padding: 13px 10px;
+  }
+  .img_wrapper {
+    min-height: 360px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &_img {
+    margin: 0 auto;
+    width: 100%;
+  }
+  &_link {
+    border-radius: 25px;
+    border: 1px solid #00abff;
+    background-color: transparent;
+    color: #00abff;
+    font-family: "DecimaNovaProLt";
+    padding: 3px 50px;
+  }
+  &_text {
+    font-family: "DecimaNovaProLt";
+    font-size: 23px;
+    letter-spacing: 0.3px;
+    margin-bottom: 15px;
+  }
+}
+.bottom_words {
+  padding: 40px 0;
+}
+.btn_bottom {
+  border: 1px solid $color-active_menu;
+  background-color: $color-active_menu;
+  border-radius: 20px;
+  color: $color-white;
+  font-size: 24px;
+  padding: 5px 79px;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+.footer {
+  background-color: $color-primary;
+  border-top: 4px solid $color-active_menu;
+  padding: 35px 0 15px;
+  color: $color-white;
+  &_top {
+    padding-bottom: 24px;
+  }
+  &_social_link {
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+    vertical-align: sub;
+    padding-top: 3px;
+  }
+  font-family: "DecimaNovaProLt";
+  font-size: 16px;
+  p {
+    font-family: "DecimaNovaProLt";
+  }
+  &_wrap {
+    border-bottom: 1px solid $color-border-smoth;
+  }
+  &_adress {
+    &-link {
+      width: 100%;
+      display: inline-block;
+      font-size: 18px;
+      letter-spacing: 0.5px;
+      line-height: 22px;
+      color: $color-active_menu !important;
+    }
+    &-phone {
+      color: $color-white;
+    }
+    padding: 0 40px 0 15px;
+  }
+  &_bottom {
+    padding-top: 27px;
+    a {
+      color: $color-white;
+    }
+  }
+  &_copyright {
+    padding: 4px 15px;
+  }
+  &_menu {
+    width: 58%;
+  }
+  &_social {
+    &_link {
+      margin-right: 17px;
+    }
+  }
+  .active {
+    color: $color-active_menu;
+  }
+  .nav-link {
+    padding: 4px 15px;
+  }
+}
+
+.navbar {
+  &-mobile {
+    box-shadow: none;
+  }
+  &-nav {
+    width: 100%;
+  }
+  &-collapse {
+    text-align: center;
+  }
+}
+.mobile_nav {
+  border-bottom: 1px solid $color-border-smoth;
+  box-shadow: none !important;
+  padding: 0;
+  .container {
+    padding: 0;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+  .header {
+    .nav-link {
+      font-size: 18px;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 780px) {
+  .nav_under {
+    overflow: auto;
+    white-space: nowrap;
+    .nav-item {
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+  .nav-link {
+    font-size: 18px;
+  }
+}
+
+// // Large devices (desktops, 992px and up)
+// @media (max-width: 992px) {
+//   .container {
+//     max-width: ;
+//   }
+// }
+
+// // Extra large devices (large desktops, 1200px and up)
+// @media (max-width: 1200px) {
+//   .container {
+//     max-width: ;
+//   }
+// }

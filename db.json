@@ -1,105 +1,189 @@
 {
   "menuItems": [
     {
-      "name": "Case Studies"
+      "name": "Case Studies",
+      "link": "/case-studies"
     },
     {
-      "name": "Services"
+      "name": "Services",
+      "link": "/services"
     },
     {
-      "name": "Expertise"
+      "name": "Expertise",
+      "link": "/expertise"
     },
     {
-      "name": "About"
+      "name": "About",
+      "link": "/about"
     }
   ],
   "texts": [
     {
       "type": "header",
-      "text": "We launch different types of platforms and operating systems us"
+      "text": "We work with forward businesses to create new digital platforms, products and services."
     },
     {
-      "type": "upperCoten",
+      "type": "upperContent",
       "title": "What We Do",
       "text": "We launch different types of platforms and operating systems us"
     },
     {
-      "type": "bottom",
-      "text": "We enjoy what we do.  Working wi th smart people at great projec"
+      "type": "contactpage",
+      "title": "Contact Us",
+      "text": "Hallo i love would you tell me your name.Shes walking on the street...."
+    },
+    {
+      "type": "about",
+      "title": "About our company",
+      "text": "About our company platforms and operating About our company About our company About our company About our company About our company systems us"
+    },
+    {
+      "type": "augmentedReality",
+      "title": "Augmented Reality",
+      "text": "Augmented Reality platforms and operating Augmented Reality Augmented Reality Augmented Reality Augmented Reality Augmented Reality systems us"
+    },
+    {
+      "type": "mobile",
+      "title": "About our mobile apps",
+      "text": "About our mobile apps platforms and operating About our mobile apps About our mobile apps About our mobile apps About our mobile apps About our mobile apps systems us"
+    },
+    {
+      "type": "expertise",
+      "title": "Expertise",
+      "text": "About our Expertise platforms and operating About our Expertise About our Expertise About our Expertise About our Expertise About our Expertise systems us"
+    },
+    {
+      "type": "ux_ui_design",
+      "title": "UX/UI Design",
+      "text": "About our UX/UI Design platforms and operating About our UX/UI Design About our UX/UI Design About our UX/UI Design About our UX/UI Design About our UX/UI Design systems us"
+    },
+    {
+      "type": "caseStudies",
+      "title": "Case Studies",
+      "text": "About our Case Studies platforms and operating About our Case Studies About our Case Studies About our Case Studies About our Case Studies About our Case Studies systems us"
+    },
+    {
+      "type": "webservices",
+      "title": "Web Services",
+      "text": "About our webservices platforms and operating About our webservices About our webservices About our webservices About our webservices About our webservices systems us"
+    },
+    {
+      "type": "development",
+      "title": "Development",
+      "text": "About our development platforms and operating About our development About our development About our development About our development About our development systems us"
+    },
+    {
+      "type": "home",
+      "title": "Home page",
+      "text": "А сегодня не каждый может смотреть в завтрашнийден, вернее может, но не каждыйб мало кто так может!!!Но МЫ можем и поэтому готовы к земле всегда"
+    },
+    {
+      "type": "bottomContent",
+      "text": "We enjoy what we do.Working with smart people at great projecs"
     }
   ],
   "services": [
     {
       "name": "Mobile Apps",
-      "description": "We are a nimble team of designers, developers, and Mobile Apps"
+      "description": "We are a nimble team of designers, developers, and Mobile Apps",
+      "link": "/mobile",
+      "img": "../assets/img/mobile.png"
     },
     {
       "name": "Web Services",
-      "description": "We are a nimble team of designers, developers, and Web Services"
+      "description": "We are a nimble team of designers, developers, and Web Services",
+      "link": "/webservices",
+      "img": "../assets/img/webservices.png"
     },
     {
       "name": "Augmented Reality",
-      "description": "We are a nimble team of designers, developers, and Augmented Reality"
+      "description": "We are a nimble team of designers, developers, and Augmented Reality",
+      "link": "/augmented_reality",
+      "img": "../assets/img/augmented_reality.png"
     },
     {
       "name": "UX/UI Design",
-      "description": "We are a nimble team of designers, developers, and UX/UI Design"
+      "description": "We are a nimble team of designers, developers, and UX/UI Design",
+      "link": "/ux_ui_design",
+      "img": "../assets/img/design.png"
     },
     {
       "name": "Development",
-      "description": "We are a nimble team of designers, developers, and Development"
+      "description": "We are a nimble team of designers, developers, and Development",
+      "link": "/development",
+      "img": "../assets/img/development.png"
     }
   ],
-  "footer": {
-    "contacts": {
-      "Headquarters": "11 E. Chavdar Street, Office 222, Kiev, Ukraine 0",
-      "countries": [
-        {
-          "country": "USA",
-          "mail": "usa.hr@trinetix.com",
-          "phone": "+1 212-336-1440"
-        },
-        {
-          "country": "Ukraine",
-          "mail": "ua.hr@trinetix.com ",
-          "phone": "+38 044-334-2341"
-        }
-      ]
+  "footerData": {
+    "headquartes": {
+      "location": "Headquarters",
+      "adress": "11 E. Chavdar Street, Office 222, Kiev, Ukraine 0"
     },
+    "contacts": [
+      {
+        "location": "USA",
+        "adress": "usa.hr@trinetix.com",
+        "phone": "+1 212-336-1440"
+      },
+      {
+        "location": "Ukraine",
+        "adress": "ua.hr@trinetix.com ",
+        "phone": "+38 044-334-2341"
+      }
+    ],
     "social": [
       {
-        "name": "Facebook"
+        "name": "Facebook",
+        "img": "../assets/img/fb.png",
+        "link": "trinetix.com"
       },
       {
-        "name": "LinkedIn"
+        "name": "LinkedIn",
+        "img": "../assets/img/in.png",
+        "link": "trinetix.com"
       },
       {
-        "name": "Google+"
+        "name": "Google+",
+        "img": "../assets/img/go.png",
+        "link": "trinetix.com"
       },
       {
-        "name": "Twitter"
+        "name": "Twitter",
+        "img": "../assets/img/tw.png",
+        "link": "trinetix.com"
       }
     ],
     "menu": [
       {
-        "name": "Home"
+        "name": "Home",
+        "link": "/home"
       },
       {
-        "name": "Case Studies"
+        "name": "Case Studies",
+        "link": "/case-studies"
       },
       {
-        "name": "Services"
+        "name": "Services",
+        "link": "/services"
       },
       {
-        "name": "Expertise"
+        "name": "Expertise",
+        "link": "/expertise"
       },
       {
-        "name": "About"
-      },
-      {
-        "name": "Contact Us"
+        "name": "About",
+        "link": "/about"
       }
     ],
     "copiright": "© 2010-2015 Trinetix LLC"
-  }
+  },
+  "send": [
+    {
+      "contactFormName": "dfgdf",
+      "contactFormEmail": "dfgdf@asd.fg",
+      "contactFormMessage": "asddfsdf",
+      "contactFormCopy": null,
+      "id": 1
+    }
+  ]
 }
