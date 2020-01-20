@@ -1,0 +1,66 @@
+<main class="content">
+
+
+  <section class="content_top" *ngIf="upperContent">
+    <div class="container">
+      <div class="row text-center justify-content-center">
+        <h1 class="content_title ">{{ upperContent.title }}</h1>
+        <p class="description">{{ upperContent.text }}</p>
+      </div>
+    </div>
+    <div class="line_space"></div>
+  </section>
+
+  <section class="services" *ngIf="contentData" >
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="services_items col-sm-12 col-md-6 text-center" *ngFor="let service of contentData" >
+          <div
+            class="view rgba-white-slight waves-light img_wrapper"
+            mdbWavesEffect
+          >
+            <img
+              class="services_img"
+              [src]="service.img"
+              [alt]="service.name"
+            />
+            <a>
+              <div class="mask"></div>
+            </a>
+          </div>
+
+          <div class="services_body">
+            <div>
+              <h4 class="services_title">{{service.name}}</h4>
+            </div>
+
+            <div class="services_text">{{service.description}}
+            </div>
+
+            <a [routerLink]="[service.link]" color="info" class="services_link" mdbWavesEffect
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+ <section class="bottom_words" *ngIf="bottomContent">
+    <section class="content_botom">
+      <div class="container">
+        <div class="row text-center justify-content-center  flex-column align-items-center">
+          <h3 class="content_title content_title-bottom ">
+           {{bottomContent.text}}
+          </h3>
+          <button href="#" (click)="showForm()" color="info" class="btn_bottom" mdbWavesEffect
+            >Contact Us</button
+          >
+        </div>
+      </div>
+    </section>
+  </section>
+</main>

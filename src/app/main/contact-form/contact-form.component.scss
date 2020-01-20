@@ -1,0 +1,14 @@
+.form_wrapper {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  z-index: 9;
+  padding: 20%;
+}
+.contact-form {
+  background-color: #fff;
+}
+button.close {
+  left: -4px;
+  position: relative;
+}

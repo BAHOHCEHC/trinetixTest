@@ -1,0 +1,67 @@
+<footer class="footer">
+  <div class="footer_wrap">
+    <div class="container">
+      <div class="footer_top row">
+        <div class="footer_adress col-sm-12 col-md-3" *ngIf="headquartes">
+          <h6 class="footer_adress-title">{{ headquartes.location }}:</h6>
+          <p>{{ headquartes.adress }}</p>
+        </div>
+        <div
+          class="footer_adress col-sm-6 col-md-3"
+          *ngFor="let contact of contacts"
+        >
+          <h6 class="footer_adress-title">{{ contact.location }}:</h6>
+          <a
+            href="{{ contact.adress }}"
+            target="_blank"
+            class="footer_adress-link"
+            >{{ contact.adress }}</a
+          >
+          <a [href]="'tel:' + contact.phone" class="footer_adress-phone">{{
+            contact.phone
+          }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="footer_bottom row">
+      <div class="footer_copyright order-2 order-sm-1">
+        <a href="https://trinetix.com">{{ copiright }}</a>
+      </div>
+
+      <div class="footer_menu d-none d-md-block order-sm-2">
+        <ul class="nav justify-content-center">
+          <li  class="nav-item" *ngFor="let menuItem of menu">
+            <a
+            [routerLinkActiveOptions]="{exact: true}"
+              class="nav-link"
+              routerLinkActive="active"
+              [routerLink]="[menuItem.link]"
+              >{{ menuItem.name }}</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/contactpage']" routerLinkActive="active"  mdbWavesEffect>
+              Contact us
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer_social col-xs-12 order-1 order-sm-3">
+        <div class="justify-content-center">
+          <a
+            target="_blank"
+            class="footer_social_link d-inline-block text-center"
+            *ngFor="let item of social"
+            [href]="item.link"
+          >
+            <img class="img-fluid" [src]="item.img" [alt]="item.name" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

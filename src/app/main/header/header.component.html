@@ -1,0 +1,102 @@
+<header class="header">
+  <div class="container-fluid show_desctop d-none d-md-block desctop_menu">
+    <div class="container">
+      <div class="row no-gutters align-items-center nav_wrapper">
+        <div class="img_wrap justify-content-start d-xs-none ">
+          <img class="img-fluid" src="../assets/img/logo.png" alt="logo" />
+        </div>
+        <ul class="nav header_nav justify-content-end d-xs-none d-flex ">
+          <li class="nav-item" *ngFor="let menuItem of menu">
+            <a
+              class="header_nav-link nav-link text-uppercase fz-menu font-weight-bold"
+              routerLinkActive="active"
+              [routerLink]="[menuItem.link]"
+              >{{ menuItem.name }}</a
+            >
+          </li>
+        </ul>
+        <button
+          class="fz-menu header_button text-uppercase font-weight-bold"
+          mdbWavesEffect
+          (click)="showForm()"
+        >
+          Contact us
+        </button>
+      </div>
+    </div>
+  </div>
+  <mdb-navbar
+    SideClass="navbar navbar-1 d-xs-flex d-md-none mobile_nav "
+    [containerInside]="true"
+  >
+    <mdb-navbar-brand>
+      <div class="img_wrap justify-content-start col-xs-5 col-md-4 ">
+        <img class="img-fluid" src="../assets/img/logo.png" alt="logo" />
+      </div>
+    </mdb-navbar-brand>
+    <links
+      class="d-sm-flex flex-column justify-content-center navbar-mobile text-center"
+    >
+      <ul class="navbar-nav mr-auto">
+        <li
+          class="nav-item"
+          *ngFor="let menuItem of menu"
+          routerLinkActive="active"
+        >
+          <a
+            class="m-auto text-center fz-menu nav-link nav-link-mobile font-weight-bold waves-light"
+            routerLinkActive="active"
+            [routerLink]="[menuItem.link]"
+            >{{ menuItem.name }}</a
+          >
+        </li>
+      </ul>
+      <button
+        class="m-auto d-inline-block  fz-menu col-md-2 header_button text-uppercase font-weight-bold"
+        mdbWavesEffect
+        (click)="showForm()"
+      >
+        Contact us
+      </button>
+    </links>
+  </mdb-navbar>
+  <div
+    class="container-fluid d-xs-none d-none d-md-flex show_desctop descriptor"
+  >
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col descriptor_secton" *ngIf="headerText">
+          <h2 class="c-w descriptor_title">{{ headerText.text }}</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row no-gutters nav_under-wrapper scrolable_menu">
+        <ul class="nav nav_under d-block scrollmenu">
+          <li class="nav-item d-inline-block" routerLinkActive="active" >
+            <a
+              class="nav-link font-weight-bolder text-uppercase fz-menu font-weight-bold"
+              [routerLink]="['/services']"
+              >All</a
+            >
+          </li>
+          <li
+            routerLinkActive="active"
+            class="nav-item d-inline-block"
+            *ngFor="let service of services"
+          >
+            <a
+              class="nav-link font-weight-bolder text-uppercase fz-menu font-weight-bold"
+              routerLinkActive="active"
+              [routerLink]="[service.link]"
+              >{{ service.name }}</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>

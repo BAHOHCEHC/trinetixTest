@@ -1,0 +1,65 @@
+<!-- Default form contact -->
+<div class="form_wrapper" [ngClass]="{ 'd-none': hide }">
+  <button type="button" class="close" (click)="close()"  aria-label="Close">
+    <span aria-hidden="true">×</span>
+  </button>
+  <form
+    class="text-center border border-light p-5 contact-form"
+    [formGroup]="contactForm"
+    (ngSubmit)="onSubmit()"
+  >
+    <p class="h4 mb-4">Contact us</p>
+
+    <!-- Name -->
+    <input
+      type="text"
+      formControlName="contactFormName"
+      id="defaultContactFormName"
+      mdbInput
+      class="form-control mb-4"
+      placeholder="Name"
+    />
+
+    <!-- Email -->
+    <input
+      type="email"
+      formControlName="contactFormEmail"
+      id="defaultContactFormEmail"
+      mdbInput
+      class="form-control mb-4"
+      placeholder="E-mail"
+    />
+
+    <!-- Message -->
+    <div class="form-group">
+      <textarea
+        formControlName="contactFormMessage"
+        class="form-control rounded-0"
+        mdbInput
+        id="exampleFormControlTextarea2"
+        rows="3"
+        placeholder="Message"
+      ></textarea>
+    </div>
+
+    <!-- Copy -->
+    <mdb-checkbox [default]="true" class="mb-4"
+      >Send me a copy of this message</mdb-checkbox
+    >
+
+    <!-- Send button -->
+    <button
+      mdbBtn
+      color="info"
+      outline="true"
+      block="true"
+      class="z-depth-0 my-4 waves-effect"
+      mdbWavesEffect
+      type="submit"
+      [disabled]="disabledSubmitButton"
+    >
+      Send
+    </button>
+  </form>
+  <!-- Default form contact -->
+</div>

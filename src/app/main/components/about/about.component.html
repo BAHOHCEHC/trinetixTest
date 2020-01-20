@@ -1,0 +1,40 @@
+<!-- <main class="content">
+  <section class="bottom_words" *ngIf="about">
+    <section class="content_botom">
+      <div class="container">
+        <div class="row text-center justify-content-center flex-column align-items-center">
+          <h3 class="content_title content_title-bottom ">
+            {{ about.title }}
+          </h3>
+          <p>{{about.text}}</p>
+          <button (click)="showForm()" href="#" color="info" class="btn_bottom" mdbWavesEffect>
+            Contact Us
+          </button>
+        </div>
+      </div>
+    </section>
+  </section>
+</main> -->
+
+<main class="content">
+  <section class="bottom_words" *ngIf="textData$ | async as textDatas; else loader">
+    <section class="content_botom">
+      <div class="container" >
+        <div class="row text-center justify-content-center flex-column align-items-center" *ngFor="let textData of textDatas">
+          <h3 class="content_title content_title-bottom ">
+            {{ textData.title }}
+          </h3>
+          <p>{{textData.text}}</p>
+          <button (click)="showForm()" href="#" color="info" class="btn_bottom" mdbWavesEffect>
+            Contact Us
+          </button>
+        </div>
+      </div>
+    </section>
+  </section>
+</main>
+
+<ng-template #loader>
+  <!-- <app-loader></app-loader> -->
+  <p>ssssssssssssssssssss</p>
+</ng-template>
